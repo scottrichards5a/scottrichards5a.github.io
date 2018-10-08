@@ -27,8 +27,7 @@
       function initMap() {
         map = new google.maps.Map(document.getElementById('map'), {
           center: {lat: 42.993735, lng: -71.467577},
-          zoom: 16,
-          mapTypeId: 'satellite'
+          zoom: 16
         });
 
         // Define the LatLng coordinates.
@@ -37,7 +36,7 @@
           new google.maps.LatLng(43.00393, -71.46373)
         );
 
-        var srcImage = "https://scottrichards5a.github.io/assets/img/AmoskeagMillyard.png"
+        var srcImage = "/assets/img/AmoskeagMillyard.png"
         overlay = new HistOverlay(bounds, srcImage, map)
 
         var walkLayer = new google.maps.KmlLayer({
