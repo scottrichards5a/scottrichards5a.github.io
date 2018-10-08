@@ -1,10 +1,94 @@
+<!DOCTYPE html>
 <html>
   <head>
-	<title>Amoskeag Millyard</title>
+    <title>Amoskeag Millyard</title>
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta charset="utf-8">
+    <style>
+      /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+      #map {
+        height: 100%;
+      }
+      /* Optional: Makes the sample page fill the window. */
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
   </head>
   <body>
-  	<div>
-  		<h1>Future Site of Amoskeag Millyard Project</h1>
-  	</div>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAHL6eTIBUtTV2F91hgpXWkF1MdkQdbR_g"></script>
+    <script>
+      var map;
+      HistOverlay.prototype = new google.maps.OverlayView();
+
+      function initMap() {
+        map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat: 42.993735, lng: -71.467577},
+          zoom: 16,
+          mapTypeId: 'satellite'
+        });
+
+        // Define the LatLng coordinates.
+        var bounds = new google.maps.LatLngBounds(
+          new google.maps.LatLng(42.98235, -71.47152),
+          new google.maps.LatLng(43.00393, -71.46373)
+        );
+
+        var srcImage = "https://scottrichards5a.github.io/assets/img/AmoskeagMillyard.png"
+        overlay = new HistOverlay(bounds, srcImage, map)
+
+        var walkLayer = new google.maps.KmlLayer({
+          url: 'https://scottrichards5a.github.io/assets/kml/amoskeag.kml',
+          preserveViewport: true,
+          map: map
+        });
+      }
+  		
+      function HistOverlay(bounds, image, map) {
+        this.bounds_ = bounds;
+        this.image_ = image;
+        this.map_ = map;
+        this.div_ = null;
+        this.setMap(map);
+      }
+
+      HistOverlay.prototype.onAdd = function() {
+        var div = document.createElement('div');
+        div.style.borderStyle = 'none';
+        div.style.borderWidth = '0px';
+        div.style.position = 'absolute';
+        var img = document.createElement('img');
+        img.src = this.image_;
+        img.style.width = "100%";
+        img.style.height = "100%";
+        img.style.position = 'absolute';
+        div.appendChild(img);
+        this.div_ = div;
+        var panes = this.getPanes();
+        panes.overlayLayer.appendChild(div);
+      };
+
+      HistOverlay.prototype.draw = function() {
+        var overlayProjection = this.getProjection();
+        var sw = overlayProjection.fromLatLngToDivPixel(this.bounds_.getSouthWest());
+        var ne = overlayProjection.fromLatLngToDivPixel(this.bounds_.getNorthEast());
+        var div = this.div_;
+        div.style.left = sw.x + 'px';
+        div.style.top = ne.y + 'px';
+        div.style.width = (ne.x - sw.x) + 'px';
+        div.style.height = (sw.y - ne.y) + 'px';
+      };
+
+      HistOverlay.prototype.onRemove = function() {
+        this.div_.parentNode.removeChild(this.div_);
+        this.div_ = null;
+      };
+
+      google.maps.event.addDomListener(window, 'load', initMap);
+    </script>
+    <div id="map"></div>
   </body>
 </html>
