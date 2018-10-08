@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <kml xmlns="http://www.opengis.net/kml/2.2">
   <Document>
-    <name>Manchester Historic Walk</name>
+    <name>amoskeag</name>
     <description/>
     <Style id="icon-1899-0288D1-normal">
       <IconStyle>
@@ -81,34 +81,6 @@
         <styleUrl>#icon-1899-0288D1-nodesc-highlight</styleUrl>
       </Pair>
     </StyleMap>
-    <Style id="line-01579B-1200-nodesc-normal">
-      <LineStyle>
-        <color>ff9b5701</color>
-        <width>1.2</width>
-      </LineStyle>
-      <BalloonStyle>
-        <text><![CDATA[<h3>$[name]</h3>]]></text>
-      </BalloonStyle>
-    </Style>
-    <Style id="line-01579B-1200-nodesc-highlight">
-      <LineStyle>
-        <color>ff9b5701</color>
-        <width>1.8</width>
-      </LineStyle>
-      <BalloonStyle>
-        <text><![CDATA[<h3>$[name]</h3>]]></text>
-      </BalloonStyle>
-    </Style>
-    <StyleMap id="line-01579B-1200-nodesc">
-      <Pair>
-        <key>normal</key>
-        <styleUrl>#line-01579B-1200-nodesc-normal</styleUrl>
-      </Pair>
-      <Pair>
-        <key>highlight</key>
-        <styleUrl>#line-01579B-1200-nodesc-highlight</styleUrl>
-      </Pair>
-    </StyleMap>
     <Style id="line-A52714-1200-nodesc-normal">
       <LineStyle>
         <color>ff1427a5</color>
@@ -135,62 +107,6 @@
       <Pair>
         <key>highlight</key>
         <styleUrl>#line-A52714-1200-nodesc-highlight</styleUrl>
-      </Pair>
-    </StyleMap>
-    <Style id="line-C2185B-1200-nodesc-normal">
-      <LineStyle>
-        <color>ff5b18c2</color>
-        <width>1.2</width>
-      </LineStyle>
-      <BalloonStyle>
-        <text><![CDATA[<h3>$[name]</h3>]]></text>
-      </BalloonStyle>
-    </Style>
-    <Style id="line-C2185B-1200-nodesc-highlight">
-      <LineStyle>
-        <color>ff5b18c2</color>
-        <width>1.8</width>
-      </LineStyle>
-      <BalloonStyle>
-        <text><![CDATA[<h3>$[name]</h3>]]></text>
-      </BalloonStyle>
-    </Style>
-    <StyleMap id="line-C2185B-1200-nodesc">
-      <Pair>
-        <key>normal</key>
-        <styleUrl>#line-C2185B-1200-nodesc-normal</styleUrl>
-      </Pair>
-      <Pair>
-        <key>highlight</key>
-        <styleUrl>#line-C2185B-1200-nodesc-highlight</styleUrl>
-      </Pair>
-    </StyleMap>
-    <Style id="line-F9A825-1200-nodesc-normal">
-      <LineStyle>
-        <color>ff25a8f9</color>
-        <width>1.2</width>
-      </LineStyle>
-      <BalloonStyle>
-        <text><![CDATA[<h3>$[name]</h3>]]></text>
-      </BalloonStyle>
-    </Style>
-    <Style id="line-F9A825-1200-nodesc-highlight">
-      <LineStyle>
-        <color>ff25a8f9</color>
-        <width>1.8</width>
-      </LineStyle>
-      <BalloonStyle>
-        <text><![CDATA[<h3>$[name]</h3>]]></text>
-      </BalloonStyle>
-    </Style>
-    <StyleMap id="line-F9A825-1200-nodesc">
-      <Pair>
-        <key>normal</key>
-        <styleUrl>#line-F9A825-1200-nodesc-normal</styleUrl>
-      </Pair>
-      <Pair>
-        <key>highlight</key>
-        <styleUrl>#line-F9A825-1200-nodesc-highlight</styleUrl>
       </Pair>
     </StyleMap>
     <Folder>
@@ -256,11 +172,16 @@
       </Placemark>
       <Placemark>
         <name>Arms Textile Mill</name>
-        <description><![CDATA[This is the site of Amoskeag’s Mill No. 9, built in 1853, reconstructed in 1880, and later became the Arms Textile Mill.<br>In September 5th of 1957, Antonio Jette, a worker in the card room of the Arms Textile Mill, felt unwell after returning from mass and collapsed on his bed. He never woke up. <br>Over a ten week period in the fall of 1957, a total of nine employees of the textile mill became sick. Two other men and one woman, would suffer similar fates to Jette.  It was the deadliest outbreak of anthrax in the country’s history.<br>A single batch of dark colored Pakistani goat hair, raw material that was used to make the lining of men’s jackets was responsible. As that goat hair worked its way through the Arms, the anthrax spores, which had been hidden in the hair, were sent airborne, floating down like confetti on the workers.<br>And it could have been worse, except for a remarkable twist.<br>In 1957, the United States Army, along with the CDC, happened to be testing a potential anthrax vaccine. Those tests were taking place at four textile mills, including three in Pennsylvania, as well as the Arms Textile Mill in Manchester.<br>When scientists realized what was happening, they halted their trial and gave the vaccine to every worker at Arms Mill.<br>No one else got sick. In fact, that experimental vaccine became the basis for the one given today to soldiers.<br>The Arms Textile Mill continued operating until 1968, when the company went out of business. In 1971, after much planning, the brick building was taken down.<br>“It was one of the largest decontamination projects in the world at the time.<br>Men in white suits sprayed the inside with potent mixtures of chlorine and formaldehyde, and an incinerator was brought on site to burn wood and other materials. The bricks would be buried off-site (in the location of the Fishercats Stadium). And that was that for the Arms.]]></description>
+        <description><![CDATA[<img src="https://lh5.googleusercontent.com/ICE8fIxr3NWvxs8DgH7oskQv-ayWBZjOOSbtbhUZtiReSpCtuBFMOKwPvFhIXFRHJ-Md0_goT7lanmb-uIzazdSc2XBSOmLdnlF76r3QGwVxd1YzzkgCE0ZYDqT1OPFvhTdZwg" height="200" width="auto" /><br><br>This is the site of Amoskeag’s Mill No. 9, built in 1853, reconstructed in 1880, and later became the Arms Textile Mill.<br>In September 5th of 1957, Antonio Jette, a worker in the card room of the Arms Textile Mill, felt unwell after returning from mass and collapsed on his bed. He never woke up. <br>Over a ten week period in the fall of 1957, a total of nine employees of the textile mill became sick. Two other men and one woman, would suffer similar fates to Jette.  It was the deadliest outbreak of anthrax in the country’s history.<br>A single batch of dark colored Pakistani goat hair, raw material that was used to make the lining of men’s jackets was responsible. As that goat hair worked its way through the Arms, the anthrax spores, which had been hidden in the hair, were sent airborne, floating down like confetti on the workers.<br>As bad as it was, the outbreak could have been much worse if not for a fortunate coincidence. In 1957, the United States Army, along with the CDC, happened to be testing a potential anthrax vaccine. Those tests were taking place at four textile mills, including three in Pennsylvania, as well as the Arms Textile Mill in Manchester. When scientists realized what was happening, they halted their trial and gave the vaccine to every worker at Arms Mill.<br>The vaccine worked and no one else got sick. In fact, that experimental vaccine became the basis for the one given today to soldiers.<br>The Arms Textile Mill continued operating until 1968, when the company went out of business. In 1971, after much planning, the brick building was taken down.<br>“It was one of the largest decontamination projects in the world at the time.<br>Men in white suits sprayed the inside with potent mixtures of chlorine and formaldehyde, and an incinerator was brought on site to burn wood and other materials. The bricks would be buried off-site (in the location of the Fishercats Stadium).]]></description>
         <styleUrl>#icon-1899-0288D1</styleUrl>
+        <ExtendedData>
+          <Data name="gx_media_links">
+            <value>https://lh5.googleusercontent.com/ICE8fIxr3NWvxs8DgH7oskQv-ayWBZjOOSbtbhUZtiReSpCtuBFMOKwPvFhIXFRHJ-Md0_goT7lanmb-uIzazdSc2XBSOmLdnlF76r3QGwVxd1YzzkgCE0ZYDqT1OPFvhTdZwg</value>
+          </Data>
+        </ExtendedData>
         <Point>
           <coordinates>
-            -71.4683819,42.9928299,0
+            -71.46889,42.99002,0
           </coordinates>
         </Point>
       </Placemark>
@@ -906,6 +827,16 @@
         </Point>
       </Placemark>
       <Placemark>
+        <name>Meat Packing Plant</name>
+        <description><![CDATA[River's Edge was one of the largest development project in Manchester in decades. The project involved the redevelopment of a 17-acre former meat packing plant into a 240,000 sq. ft. urgent care facility (expandable to 349,000 sq. ft., an 111,000 sq. ft. medical office building, a three-story residential building and a 13,000 sq. ft. commercial building. ]]></description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            -71.4690256,42.9743542,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
         <name>Leg 1</name>
         <styleUrl>#line-A52714-1200-nodesc</styleUrl>
         <LineString>
@@ -1021,16 +952,6 @@
             -71.4678535,42.9870951,0
             -71.4676845,42.986793,0
             -71.467647,42.9862475,0
-          </coordinates>
-        </LineString>
-      </Placemark>
-      <Placemark>
-        <name>Leg 2</name>
-        <styleUrl>#line-C2185B-1200-nodesc</styleUrl>
-        <LineString>
-          <tessellate>1</tessellate>
-          <coordinates>
-            -71.4678723,42.9861474,0
             -71.4689934,42.985706,0
             -71.4690202,42.9857531,0
             -71.4690712,42.9857393,0
@@ -1043,31 +964,25 @@
             -71.4695218,42.9875954,0
             -71.4696398,42.9878721,0
             -71.4696103,42.9878996,0
-            -71.4695513,42.9879074,0
             -71.4694199,42.9879054,0
             -71.4694333,42.9879643,0
-            -71.4693287,42.9885902,0
             -71.4692777,42.9889571,0
             -71.4692509,42.9890473,0
             -71.4692134,42.9890807,0
             -71.4691731,42.9890905,0
             -71.469031,42.989067,0
             -71.4686501,42.9890316,0
-            -71.4686018,42.9894594,0
-            -71.4685643,42.989685,0
+            -71.4686405,42.9891935,0
+            -71.468603,42.9894917,0
+            -71.4685923,42.9895427,0
+            -71.4685601,42.9897232,0
             -71.4685053,42.9899283,0
-            -71.468406,42.9902265,0
-            -71.4683336,42.9904364,0
-            -71.4682317,42.9906189,0
-            -71.4680976,42.9908857,0
-            -71.4678696,42.9913703,0
-            -71.4676765,42.9918058,0
+            -71.468426,42.9901706,0
+            -71.4683562,42.9903628,0
+            -71.4683079,42.9904766,0
             -71.467647,42.9918686,0
-            -71.468229,42.9920177,0
-            -71.4688191,42.9921904,0
             -71.4688888,42.992212,0
             -71.4690953,42.992212,0
-            -71.4690149,42.9928849,0
             -71.4689854,42.9931537,0
             -71.4689505,42.9931811,0
             -71.468854,42.9931792,0
@@ -1075,119 +990,6 @@
             -71.4688325,42.9933126,0
           </coordinates>
         </LineString>
-      </Placemark>
-      <Placemark>
-        <name>Optional Route Bypass</name>
-        <styleUrl>#line-F9A825-1200-nodesc</styleUrl>
-        <LineString>
-          <tessellate>1</tessellate>
-          <coordinates>
-            -71.467647,42.9862475,0
-            -71.4678723,42.9861474,0
-          </coordinates>
-        </LineString>
-      </Placemark>
-      <Placemark>
-        <name>Optional Route Leg 1</name>
-        <styleUrl>#line-01579B-1200-nodesc</styleUrl>
-        <LineString>
-          <tessellate>1</tessellate>
-          <coordinates>
-            -71.4678481,42.9861568,0
-            -71.4678361,42.9861298,0
-            -71.46782,42.9860994,0
-            -71.4677951,42.9860484,0
-            -71.4677723,42.9860013,0
-            -71.4677542,42.9859694,0
-            -71.4676926,42.9858831,0
-            -71.4676677,42.9858492,0
-            -71.4676423,42.9858046,0
-            -71.4676221,42.9857683,0
-            -71.4675859,42.9857045,0
-            -71.4675497,42.9856407,0
-            -71.4675303,42.9856079,0
-            -71.4674988,42.9855524,0
-            -71.4674713,42.9855014,0
-            -71.4674465,42.9854563,0
-            -71.4673834,42.98534,0
-            -71.4673298,42.9852414,0
-            -71.4672808,42.9851478,0
-            -71.4672305,42.9850604,0
-            -71.4671608,42.984928,0
-            -71.4671125,42.9848402,0
-            -71.4670287,42.9846862,0
-            -71.4669959,42.9846244,0
-            -71.4669429,42.9845267,0
-            -71.4668503,42.9843551,0
-            -71.4668215,42.9843016,0
-            -71.4667363,42.9841412,0
-            -71.4666706,42.9840215,0
-            -71.4665989,42.9838851,0
-            -71.4665861,42.983866,0
-            -71.4664943,42.9838037,0
-            -71.4664567,42.9837223,0
-            -71.4664111,42.9836237,0
-            -71.4663327,42.9834642,0
-            -71.4662998,42.9834034,0
-            -71.4662462,42.9833259,0
-            -71.4662173,42.9832955,0
-            -71.466167,42.9832558,0
-            -71.4661328,42.9832351,0
-            -71.4662153,42.9829614,0
-            -71.4662227,42.9829462,0
-            -71.4663669,42.9828363,0
-            -71.4664534,42.9827755,0
-            -71.4665861,42.9827559,0
-            -71.4667109,42.9827063,0
-            -71.4670052,42.9826195,0
-            -71.4671139,42.9825901,0
-            -71.4671494,42.9825724,0
-            -71.4671762,42.9825297,0
-            -71.4671789,42.9824257,0
-            -71.4671642,42.9824228,0
-            -71.4671856,42.9821893,0
-            -71.4671917,42.9821344,0
-            -71.4671863,42.9819666,0
-            -71.4671796,42.9818601,0
-            -71.4671588,42.9818116,0
-            -71.4671829,42.9816119,0
-            -71.4672319,42.9812734,0
-            -71.4672701,42.9810277,0
-            -71.4672922,42.9808206,0
-            -71.4673043,42.9806843,0
-            -71.4673124,42.9805724,0
-            -71.4673238,42.9804252,0
-            -71.4673338,42.9802511,0
-            -71.4673385,42.9801216,0
-            -71.4673526,42.9798876,0
-            -71.4673566,42.9798037,0
-            -71.4673888,42.9796938,0
-            -71.467486,42.9795702,0
-            -71.4674988,42.9795393,0
-            -71.467537,42.9794485,0
-            -71.4675484,42.9793823,0
-            -71.4675678,42.9793376,0
-            -71.4676335,42.9792469,0
-            -71.4677455,42.9791615,0
-            -71.4679205,42.9790256,0
-            -71.4680895,42.9788951,0
-            -71.4681908,42.9788338,0
-            -71.4683872,42.9787642,0
-            -71.4684737,42.9787171,0
-            -71.4685173,42.9786798,0
-            -71.4692228,42.9789805,0
-          </coordinates>
-        </LineString>
-      </Placemark>
-      <Placemark>
-        <name>Meat Packing Plant</name>
-        <description><![CDATA[River's Edge was one of the largest development project in Manchester in decades. The project involved the redevelopment of a 17-acre former meat packing plant into a 240,000 sq. ft. urgent care facility (expandable to 349,000 sq. ft., an 111,000 sq. ft. medical office building, a three-story residential building and a 13,000 sq. ft. commercial building. ]]></description>
-        <styleUrl>#icon-1899-0288D1</styleUrl>
-        <Point>
-          <coordinates>
-            -71.4690256,42.9743542,0
-          </coordinates>
-        </Point>
       </Placemark>
     </Folder>
     <Folder>
