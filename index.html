@@ -86,6 +86,14 @@
         this.div_ = null;
       };
 
+      google.maps.event.addListener(map, 'zoom_changed', function() {
+        if (map.getZoom() < 16){
+          walkLayer.setMap(null);
+        } else {
+          walkLayer.setMap(map); 
+        }
+      });
+
       google.maps.event.addDomListener(window, 'load', initMap);
     </script>
     <div id="map"></div>
