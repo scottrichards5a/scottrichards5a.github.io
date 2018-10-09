@@ -86,7 +86,7 @@
         this.div_ = null;
       };
 
-      google.maps.event.addListener(map, 'zoom_changed', function() {
+      map.addListener('zoom_changed', function() {
         if (map.getZoom() < 16){
           walkLayer.setMap(null);
         } else {
