@@ -41,12 +41,11 @@
 
         var walkLayer = new google.maps.KmlLayer({
           url: 'https://scottrichards5a.github.io/assets/kml/amoskeag6.kmz',
-          preserveViewport: true,
-          map: map
+          preserveViewport: true
         });
 
         map.addListener('zoom_changed', function() {
-          if (map.getZoom() < 16){
+          if (map.getZoom() < 17){
             walkLayer.setMap(null);
           } else {
             walkLayer.setMap(map); 
