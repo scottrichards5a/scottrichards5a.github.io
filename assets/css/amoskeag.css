@@ -5,6 +5,7 @@
 
 html, body {
   height: 100%;
+  font-family: Georgia, serif;
 }
 
 #map {
@@ -16,4 +17,11 @@ a {
   text-decoration: none;
   -webkit-transition: 0.5s;
   transition: 0.5s;
+}
+
+#timeline {
+	position: fixed;
+	top: 15px;
+	left: 15px;
+	width: 200px;
 }
