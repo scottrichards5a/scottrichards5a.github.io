@@ -38,6 +38,8 @@ ul {
 }
 
 #timeline div {
+  background-image: url("../img/brassplaque.png");
+  background-size: cover;
 	display: flex;
 	height: 50px;
 	justify-content: center;
