@@ -26,6 +26,8 @@ ul {
 }
 
 #timeline {
+	border: 5px;
+	border-style: outset;
 	position: fixed;
 	top: 30px;
 	left: 20px;
