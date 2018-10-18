@@ -27,22 +27,29 @@ ul {
 
 #timeline {
 	background-color: #c04000;
+  background-image: url("../img/mahogany.png");
 	border: 5px;
 	border-color: #c04000;
 	border-style: outset;
 	position: fixed;
 	top: 30px;
 	left: 20px;
-	width: 200px;
+	width: 250px;
 	z-index: 100;
 }
 
 #timeline div {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#timeline li div {
   align-items: center;
   background-image: url("../img/brassplaque.png");
   background-size: cover;
 	display: flex;
 	height: 55px;
+  width: 195px;
 	justify-content: center;
 	margin: 10px 5px 10px 0; 
 }
