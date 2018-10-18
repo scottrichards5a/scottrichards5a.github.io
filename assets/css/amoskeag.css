@@ -31,8 +31,14 @@ ul {
 	border-color: #c04000;
 	border-style: outset;
 	position: fixed;
+	text-align: center;
 	top: 30px;
 	left: 20px;
 	width: 200px;
 	z-index: 100;
+}
+
+#timeline div {
+	height: 50px;
+	vertical-align: middle;
 }
