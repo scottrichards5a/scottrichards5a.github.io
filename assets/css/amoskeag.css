@@ -1,3 +1,5 @@
+ @font-face { font-family: Delicious; src: url('../font/clarendon/tt0351m_.ttf'); }
+
 * {
   margin: 0;
   padding: 0;
@@ -5,23 +7,28 @@
 
 html, body {
   height: 100%;
-  font-family: Georgia, serif;
+  font-family: Clarendon, Georgia, serif;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+ul {
+	list-style: none;
 }
 
 #map {
   height: 100%;
 }
 
-a {
-  color: #ffffcc;
-  text-decoration: none;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-}
-
 #timeline {
 	position: fixed;
-	top: 15px;
-	left: 15px;
+	top: 20px;
+	left: 20px;
 	width: 200px;
+	z-index: 100;
 }
