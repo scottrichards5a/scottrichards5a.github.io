@@ -1,4 +1,4 @@
- @font-face { font-family: Delicious; src: url('../fonts/clarendon/tt0351m_.ttf'); }
+ @font-face { font-family: Delicious; src: url('https://scottrichards5a.github.io/assets/fonts/clarendon/tt0351m_.ttf'); }
 
 * {
   margin: 0;
@@ -7,7 +7,7 @@
 
 html, body {
   height: 100%;
-  font-family: Clarendon, Georgia, serif;
+  font-family: Clarendon, serif;
 }
 
 a {
