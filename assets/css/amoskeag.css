@@ -56,7 +56,7 @@ ul {
   margin-bottom: 10px; 
 }
 
-#timeline li div.selected {
+#timeline li div.selected,#timeline li div:hover {
   height: 61px;
   width: 215px;
 }
