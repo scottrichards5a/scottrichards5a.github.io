@@ -41,7 +41,7 @@ ul {
 #timeline div {
   margin-left: auto;
   margin-right: auto;
-  width: 230px;
+  width: 200px;
 }
 
 #timeline li div {
@@ -49,14 +49,14 @@ ul {
   background-image: url("../img/brassplaque.png");
   background-size: cover;
 	display: flex;
-	height: 41px;
-  width: 100px;
+	height: 61px;
+  width: 150px;
 	justify-content: center;
 	margin-top: 10px;
   margin-bottom: 10px; 
 }
 
 #timeline li div.selected, #timeline li div:hover {
-  height: 61px;
-  width: 215px;
+  height: 73px;
+  width: 180px;
 }
