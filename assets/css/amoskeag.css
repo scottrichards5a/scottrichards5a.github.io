@@ -27,7 +27,7 @@ ul {
 
 #timeline {
 	background-color: #c04000;
-  background-image: url("../img/mahogany.png");
+  background-image: url("../img/mahogany.jpg");
 	border: 5px;
 	border-color: #c04000;
 	border-style: outset;
@@ -41,6 +41,7 @@ ul {
 #timeline div {
   margin-left: auto;
   margin-right: auto;
+  width: 230px;
 }
 
 #timeline li div {
