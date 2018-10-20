@@ -75,14 +75,14 @@ div#map_controls div.map_control_row {
 
 div#map_controls div.map_control_row div {
   display: inline-block;
-  background-image: url("../img/brassplaque.png");
+  background-image: url("../img/brassplaque-thin.png");
   background-size: cover;
   text-align: center;
-  height: 20px;
+  height: 14px;
   width: 50px;
 }
 
 div#map_controls div#map_type div {
-  height: 28px;
+  height: 20px;
   width: 70px;
 }
