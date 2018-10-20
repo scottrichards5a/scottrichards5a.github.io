@@ -74,4 +74,6 @@ div#map_controls div.map_control_row {
 div#map_controls div.map_control_row div {
   display: table-cell;
   text-align: center;
+  background-image: url("../img/brassplaque.png");
+  background-size: cover;
 }
