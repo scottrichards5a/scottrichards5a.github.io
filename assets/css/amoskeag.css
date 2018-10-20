@@ -70,12 +70,19 @@ div#map_controls {
 
 div#map_controls div.map_control_row {
   margin-top: 10px;
+  text-align: center;
 }
 
 div#map_controls div.map_control_row div {
   display: inline-block;
-  text-align: center;
   background-image: url("../img/brassplaque.png");
   background-size: cover;
+  text-align: center;
+  height: 20px;
   width: 50px;
+}
+
+div#map_controls div#map_type div {
+  height: 28px;
+  width: 70px;
 }
