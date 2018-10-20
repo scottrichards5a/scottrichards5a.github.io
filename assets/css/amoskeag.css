@@ -62,3 +62,23 @@ ul {
   height: 61px;
   width: 150px;
 }
+
+div#map_controls {
+  display: table;
+}
+
+div#map_controls div.map_control_row {
+  display: table-row;
+}
+
+div#map_controls div.map_control_row div {
+  display: table-cell;
+}
+
+div#map_controls div.map_control_row div:first {
+  text-align: right;
+}
+
+div#map_controls div.map_control_row div:last {
+  text-align: left;
+}
