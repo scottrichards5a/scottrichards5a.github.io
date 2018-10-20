@@ -92,6 +92,18 @@
       }
       google.maps.event.addDomListener(window, 'load', initMap);
 
+      $("div.map").click(function() {
+        $("div.satellite").removeClass("selected");
+        $("div.map").addClass("selected");
+        map.setMapTypeId("roadmap");
+      })
+
+      $("div.satellite").click(function() {
+        $("div.map").removeClass("selected");
+        $("div.satellite").addClass("selected");
+        map.setMapTypeId("satellite");
+      })
+
     </script>
   </head>
   <body>
@@ -99,8 +111,8 @@
     <div id="timeline">
       <div id="map_controls">
         <div id="map_type" class="map_control_row">
-          <div class="selected"><a>Map</a></div>
-          <div><a>Sat</a></div>
+          <div class="selected map"><a>Map</a></div>
+          <div class="satellite"><a>Sat</a></div>
         </div>
         <div id="zoom" class="map_control_row">
           <div><a>+</a></div>
