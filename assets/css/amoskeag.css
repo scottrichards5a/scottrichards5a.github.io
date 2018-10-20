@@ -64,16 +64,18 @@ ul {
 }
 
 div#map_controls {
-  display: table;
+  margin-left:auto;
+  margin-right:auto;
 }
 
 div#map_controls div.map_control_row {
-  display: table-row;
+  margin-top: 10px;
 }
 
 div#map_controls div.map_control_row div {
-  display: table-cell;
+  display: inline-block;
   text-align: center;
   background-image: url("../img/brassplaque.png");
   background-size: cover;
+  width: 50px;
 }
