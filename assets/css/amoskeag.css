@@ -32,7 +32,7 @@ ul {
 	border-color: #AC6551;
 	border-style: outset;
 	position: fixed;
-	top: 52px;
+	top: 10px;
 	left: 10px;
 	width: 183px;
 	z-index: 100;
@@ -75,14 +75,23 @@ div#map_controls div.map_control_row {
 
 div#map_controls div.map_control_row div {
   display: inline-block;
-  background-image: url("../img/brassplaque-thin.png");
+  background-image: url("../img/brassplaque.png");
   background-size: cover;
   text-align: center;
-  height: 14px;
+  height: 20px;
   width: 50px;
 }
 
 div#map_controls div#map_type div {
+  background-image: url("../img/brassplaque-thin.png");
   height: 20px;
+  width: 70px;
+}
+
+div#map_controls div#map_type div.selected {
+  background-image: url("../img/brassplaque-thin.png");
+  font-size: 1.2em;
+  font-weight: bold;
+  height: 22px;
   width: 70px;
 }
