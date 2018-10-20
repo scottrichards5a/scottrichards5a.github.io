@@ -92,6 +92,6 @@ div#map_controls div#map_type div.selected {
   background-image: url("../img/brassplaque-thin.png");
   font-size: 1.2em;
   font-weight: bold;
-  height: 22px;
-  width: 70px;
+  height: 24px;
+  width: 85px;
 }
