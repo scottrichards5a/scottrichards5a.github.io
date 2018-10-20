@@ -75,10 +75,10 @@ div#map_controls div.map_control_row div {
   display: table-cell;
 }
 
-div#map_controls div.map_control_row div:first {
+div#map_controls div.map_control_row div:first-child {
   text-align: right;
 }
 
-div#map_controls div.map_control_row div:last {
+div#map_controls div.map_control_row div:last-child {
   text-align: left;
 }
