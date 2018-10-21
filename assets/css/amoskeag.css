@@ -74,9 +74,10 @@ div#map_controls div.map_control_row {
 }
 
 div#map_controls div.map_control_row div {
-  display: inline-block;
   background-image: url("../img/brassplaque.png");
   background-size: cover;
+  cursor: pointer;
+  display: inline-block;
   text-align: center;
   height: 20px;
   width: 50px;
