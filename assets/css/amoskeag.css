@@ -59,7 +59,7 @@ ul {
 #timeline li div.selected, #timeline li div:hover {
   font-size: 1.4em;
   font-weight: bold;
-  height: 61px;
+  height: 42px;
   width: 150px;
 }
 
