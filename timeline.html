@@ -92,17 +92,19 @@
       }
       google.maps.event.addDomListener(window, 'load', initMap);
 
-      $("div.map").click(function() {
-        $("div.satellite").removeClass("selected");
-        $("div.map").addClass("selected");
-        map.setMapTypeId("roadmap");
-      })
+      $( document ).ready(function() {
+        $("div.map").click(function() {
+          $("div.satellite").removeClass("selected");
+          $("div.map").addClass("selected");
+          map.setMapTypeId("roadmap");
+        });
 
-      $("div.satellite").click(function() {
-        $("div.map").removeClass("selected");
-        $("div.satellite").addClass("selected");
-        map.setMapTypeId("satellite");
-      })
+        $("div.satellite").click(function() {
+          $("div.map").removeClass("selected");
+          $("div.satellite").addClass("selected");
+          map.setMapTypeId("satellite");
+        });
+      });
 
     </script>
   </head>
