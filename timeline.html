@@ -104,6 +104,16 @@
           $("div.satellite").addClass("selected");
           map.setMapTypeId("satellite");
         });
+
+        $("div.increase_zoom").click(function() {
+          var zoom = map.getZoom();
+          map.setZoom(zoom + 1);
+        });
+
+        $("div.decrease_zoom").click(function() {
+          var zoom = map.getZoom();
+          map.setZoom(zoom - 1);
+        });
       });
 
     </script>
@@ -117,8 +127,8 @@
           <div class="satellite"><a>Sat</a></div>
         </div>
         <div id="zoom" class="map_control_row">
-          <div><a>+</a></div>
-          <div><a>-</a></div>
+          <div class="increase_zoom"><a>+</a></div>
+          <div class="decrease_zoom"><a>-</a></div>
         </div>
       </div>
       <div>
