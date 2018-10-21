@@ -46,10 +46,10 @@ ul {
 
 #timeline li div {
   align-items: center;
-  background-image: url("../img/brassplaque.png");
+  background-image: url("../img/brassplaque-thin.png");
   background-size: cover;
 	display: flex;
-	height: 57px;
+	height: 39px;
   width: 140px;
 	justify-content: center;
 	margin-top: 10px;
