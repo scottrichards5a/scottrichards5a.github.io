@@ -25,23 +25,26 @@ ul {
   height: 100%;
 }
 
-#timeline {
+#timeline, #expand_collapse {
 	background-color: #AC6551;
   background-image: url("../img/mahogany.jpg");
 	border: 5px;
 	border-color: #AC6551;
 	border-style: outset;
 	position: fixed;
-	top: 10px;
-	left: 10px;
-	width: 183px;
-	z-index: 100;
+  z-index: 100;
+}
+
+#timeline {
+  top: 0;
+  left: 0;
+  width: 170px;
 }
 
 #timeline div {
   margin-left: auto;
   margin-right: auto;
-  width: 170px;
+  width: 160px;
 }
 
 #timeline li div {
@@ -95,4 +98,25 @@ div#map_controls div#map_type div.selected {
   font-weight: bold;
   height: 24px;
   width: 85px;
+}
+
+#expand_collapse {
+  top: 0;
+  left: 170;
+  width: 80px;
+}
+
+#expand_collapse div {
+  height: 35px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70px;
+}
+
+#expand_collapse div#expand {
+  background-image: url("../img/open.png");
+}
+
+#expand_collapse div#collapse {
+  background-image: url("../img/close.png");
 }
