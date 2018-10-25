@@ -126,3 +126,13 @@ div#map_controls div#map_type div.selected {
 #expand_collapse div#collapse {
   background-image: url("../img/close.png");
 }
+
+@media only screen and (max-width: 300px) {
+  #timeline {
+    left: -175px;
+  }
+
+  #expand_collapse {
+    left: 0;
+  }
+}
