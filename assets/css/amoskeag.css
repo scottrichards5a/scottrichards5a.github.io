@@ -110,6 +110,7 @@ div#map_controls div#map_type div.selected {
 
 #expand_collapse div {
   background-size: cover;
+  cursor: pointer;
   height: 35px;
   margin-bottom: 10px;
   margin-left: auto;
