@@ -127,7 +127,7 @@ div#map_controls div#map_type div.selected {
   background-image: url("../img/close.png");
 }
 
-@media only screen and (max-width: 300px) {
+@media only screen and (max-width: 400px) {
   #timeline {
     left: -175px;
   }
