@@ -102,16 +102,19 @@ div#map_controls div#map_type div.selected {
 
 #expand_collapse {
   border-left: 0;
-  left: 165;
+  left: 175;
   top: 0;
   width: 80px;
   z-index: 105;
 }
 
 #expand_collapse div {
+  background-size: cover;
   height: 35px;
+  margin-bottom: 10px;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 10px;
   width: 70px;
 }
 
