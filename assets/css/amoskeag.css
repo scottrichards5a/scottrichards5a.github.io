@@ -32,19 +32,19 @@ ul {
 	border-color: #AC6551;
 	border-style: outset;
 	position: fixed;
-  z-index: 100;
 }
 
 #timeline {
   top: 0;
   left: 0;
   width: 170px;
+  z-index: 100;
 }
 
 #timeline div {
   margin-left: auto;
   margin-right: auto;
-  width: 160px;
+  width: 165px;
 }
 
 #timeline li div {
@@ -101,9 +101,11 @@ div#map_controls div#map_type div.selected {
 }
 
 #expand_collapse {
+  border-left: 0;
+  left: 165;
   top: 0;
-  left: 170;
   width: 80px;
+  z-index: 105;
 }
 
 #expand_collapse div {
