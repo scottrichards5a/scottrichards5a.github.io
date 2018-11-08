@@ -8,6 +8,12 @@
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAHL6eTIBUtTV2F91hgpXWkF1MdkQdbR_g"></script>
     <script>
       var map;
+      var dateOverlays = new Map()
+      dateOverlays.set(1868, 
+        {"img":"/assets/img/Manchester 1892.png", "bounds": new google.maps.LatLngBounds(
+          new google.maps.LatLng(42.98235, -71.47152),
+          new google.maps.LatLng(43.00393, -71.46373)
+        )});
 
       function initMap() {
         map = new google.maps.Map(document.getElementById('map'), {
