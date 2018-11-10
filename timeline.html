@@ -30,7 +30,7 @@
       function selectDate(hashDate) {
         $("ul#dates>li>div.selected").removeClass("selected")
         $("ul#dates div:has(a[href='" + hashDate + "'])").addClass("selected")
-        var overlayData = dateOverlays.get(hashDate.replace("#", ""))
+        var overlayData = dateOverlays.get(parseInt(hashDate.replace("#", "")))
         console.log(overlayData)
       }
 
