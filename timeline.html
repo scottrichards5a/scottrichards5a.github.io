@@ -10,68 +10,6 @@
     <script src="assets/js/antiqueStyle.js"></script>
     <script src="assets/js/interactiveTimeline.js"></script>
     <script>
-
-
-      $( document ).ready(function() {
-
-        var dateIter = dateOverlays.keys();
-        var nextDate = dateIter.next();
-        while (!nextDate.done) {
-          $('<li><div><a href="#' + nextDate.value + '">' + nextDate.value + '</a></div></li>').insertBefore($("ul#dates li:has(div.selected)"));
-          nextDate = dateIter.next();
-        }
-
-        // Date has already been selected
-        var urlFragment = window.location.hash
-        if (urlFragment) {
-          selectDate(urlFragment);
-        }
-
-        $("div.map").click(function() {
-          $("div.satellite").removeClass("selected");
-          $("div.map").addClass("selected");
-          map.setMapTypeId("roadmap");
-        });
-
-        $("div.satellite").click(function() {
-          $("div.map").removeClass("selected");
-          $("div.satellite").addClass("selected");
-          map.setMapTypeId("satellite");
-        });
-
-        $("div.increase_zoom").click(function() {
-          var zoom = map.getZoom();
-          map.setZoom(zoom + 1);
-        });
-
-        $("div.decrease_zoom").click(function() {
-          var zoom = map.getZoom();
-          map.setZoom(zoom - 1);
-        });
-
-        $("div#expand").click(function() {
-          $("div#timeline").animate({
-             left: '0'
-          });
-          $("div#expand_collapse").animate({
-            left: '175px'
-          });
-        });
-
-        $("div#collapse").click(function() {
-          $("div#timeline").animate({
-             left: '-175px'
-          });
-          $("div#expand_collapse").animate({
-            left: '0'
-          });
-        });
-
-        $("ul#dates a").click(function() {
-          selectDate($(this).attr("href"));
-        });
-      });
-
     </script>
   </head>
   <body>

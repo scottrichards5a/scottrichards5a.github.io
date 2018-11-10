@@ -6,8 +6,8 @@
         )})
       dateOverlays.set(1892, 
         {"img":"/assets/img/Manchester 1892.png", "bounds": new google.maps.LatLngBounds(
-          new google.maps.LatLng(42.98035, -71.470026),
-          new google.maps.LatLng(43.002605, -71.46053)
+          new google.maps.LatLng(42.98135, -71.470026),
+          new google.maps.LatLng(43.002605, -71.45999)
         )});
       dateOverlays.set(1966, {"img": "", "bounds": new google.maps.LatLngBounds(
           new google.maps.LatLng(42.98235, -71.47152),
