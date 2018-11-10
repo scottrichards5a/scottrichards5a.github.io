@@ -46,7 +46,7 @@
         this.setMap(map);
       }
 
-      HistOverlay.prototype.onAdd = function() {
+      ImageOverlay.prototype.onAdd = function() {
         var div = document.createElement('div');
         div.style.borderStyle = 'none';
         div.style.borderWidth = '0px';
@@ -62,7 +62,7 @@
         panes.overlayLayer.appendChild(div);
       };
 
-      HistOverlay.prototype.draw = function() {
+      ImageOverlay.prototype.draw = function() {
         var overlayProjection = this.getProjection();
         var sw = overlayProjection.fromLatLngToDivPixel(this.bounds_.getSouthWest());
         var ne = overlayProjection.fromLatLngToDivPixel(this.bounds_.getNorthEast());
@@ -73,7 +73,7 @@
         div.style.height = (sw.y - ne.y) + 'px';
       };
 
-      HistOverlay.prototype.onRemove = function() {
+      ImageOverlay.prototype.onRemove = function() {
         this.div_.parentNode.removeChild(this.div_);
         this.div_ = null;
       };
