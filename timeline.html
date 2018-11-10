@@ -30,6 +30,8 @@
       function selectDate(hashDate) {
         $("ul#dates>li>div.selected").removeClass("selected")
         $("ul#dates div:has(a[href='" + hashDate + "'])").addClass("selected")
+        var overlayData = dateOverlays.get(hashDate.replace("#", ""))
+        console.log(overlayData)
       }
 
       function initMap() {
@@ -68,6 +70,15 @@
             {
               "featureType": "poi.park",
               "elementType": "labels.text.fill",
+              "stylers": [
+                {
+                  "color": "#447530"
+                }
+              ]
+            },
+            {
+              "featureType": "poi.sports_complex",
+              "elementType": "geometry.fill",
               "stylers": [
                 {
                   "color": "#447530"
