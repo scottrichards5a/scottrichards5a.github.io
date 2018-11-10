@@ -6,8 +6,8 @@ dateOverlays.set(1868, {"img": "", "bounds": new google.maps.LatLngBounds(
   )})
 dateOverlays.set(1892, 
   {"img":"/assets/img/Manchester 1892.png", "bounds": new google.maps.LatLngBounds(
-    new google.maps.LatLng(42.98155, -71.470026),
-    new google.maps.LatLng(43.002605, -71.45859)
+    new google.maps.LatLng(42.98100, -71.470026),
+    new google.maps.LatLng(43.002605, -71.45889)
   )});
 dateOverlays.set(1966, {"img": "", "bounds": new google.maps.LatLngBounds(
     new google.maps.LatLng(42.98235, -71.47152),
@@ -39,60 +39,60 @@ google.maps.event.addDomListener(window, 'load', initMap);
 
 $( document ).ready(function() {
 
-        var dateIter = dateOverlays.keys();
-        var nextDate = dateIter.next();
-        while (!nextDate.done) {
-          $('<li><div><a href="#' + nextDate.value + '">' + nextDate.value + '</a></div></li>').insertBefore($("ul#dates li:has(div.selected)"));
-          nextDate = dateIter.next();
-        }
+  var dateIter = dateOverlays.keys();
+  var nextDate = dateIter.next();
+  while (!nextDate.done) {
+    $('<li><div><a href="#' + nextDate.value + '">' + nextDate.value + '</a></div></li>').insertBefore($("ul#dates li:has(div.selected)"));
+    nextDate = dateIter.next();
+  }
 
-        // Date has already been selected
-        var urlFragment = window.location.hash
-        if (urlFragment) {
-          selectDate(urlFragment);
-        }
+  // Date has already been selected
+  var urlFragment = window.location.hash
+  if (urlFragment) {
+    selectDate(urlFragment);
+  }
 
-        $("div.map").click(function() {
-          $("div.satellite").removeClass("selected");
-          $("div.map").addClass("selected");
-          map.setMapTypeId("roadmap");
-        });
+  $("div.map").click(function() {
+    $("div.satellite").removeClass("selected");
+    $("div.map").addClass("selected");
+    map.setMapTypeId("roadmap");
+  });
 
-        $("div.satellite").click(function() {
-          $("div.map").removeClass("selected");
-          $("div.satellite").addClass("selected");
-          map.setMapTypeId("satellite");
-        });
+  $("div.satellite").click(function() {
+    $("div.map").removeClass("selected");
+    $("div.satellite").addClass("selected");
+    map.setMapTypeId("satellite");
+  });
 
-        $("div.increase_zoom").click(function() {
-          var zoom = map.getZoom();
-          map.setZoom(zoom + 1);
-        });
+  $("div.increase_zoom").click(function() {
+    var zoom = map.getZoom();
+    map.setZoom(zoom + 1);
+  });
 
-        $("div.decrease_zoom").click(function() {
-          var zoom = map.getZoom();
-          map.setZoom(zoom - 1);
-        });
+  $("div.decrease_zoom").click(function() {
+    var zoom = map.getZoom();
+    map.setZoom(zoom - 1);
+  });
 
-        $("div#expand").click(function() {
-          $("div#timeline").animate({
-             left: '0'
-          });
-          $("div#expand_collapse").animate({
-            left: '175px'
-          });
-        });
+  $("div#expand").click(function() {
+    $("div#timeline").animate({
+       left: '0'
+    });
+    $("div#expand_collapse").animate({
+      left: '175px'
+    });
+  });
 
-        $("div#collapse").click(function() {
-          $("div#timeline").animate({
-             left: '-175px'
-          });
-          $("div#expand_collapse").animate({
-            left: '0'
-          });
-        });
+  $("div#collapse").click(function() {
+    $("div#timeline").animate({
+       left: '-175px'
+    });
+    $("div#expand_collapse").animate({
+      left: '0'
+    });
+  });
 
-        $("ul#dates a").click(function() {
-          selectDate($(this).attr("href"));
-        });
+  $("ul#dates a").click(function() {
+    selectDate($(this).attr("href"));
+  });
 });
