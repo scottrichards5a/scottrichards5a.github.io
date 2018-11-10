@@ -6,8 +6,8 @@ dateOverlays.set(1868, {"img": "", "bounds": new google.maps.LatLngBounds(
   )})
 dateOverlays.set(1892, 
   {"img":"/assets/img/Manchester 1892.png", "bounds": new google.maps.LatLngBounds(
-    new google.maps.LatLng(42.98155, -71.470026),
-    new google.maps.LatLng(43.002605, -71.45909)
+    new google.maps.LatLng(42.98185, -71.470026),
+    new google.maps.LatLng(43.002605, -71.45809)
   )});
 dateOverlays.set(1966, {"img": "", "bounds": new google.maps.LatLngBounds(
     new google.maps.LatLng(42.98235, -71.47152),
@@ -27,14 +27,14 @@ function selectDate(hashDate) {
   }
 }
 
-      function initMap() {
-        map = new google.maps.Map(document.getElementById('map'), {
-          center: {lat: 42.993735, lng: -71.467577},
-          zoom: 16,
-          disableDefaultUI: true,
-          styles: ANTIQUE_MAP_STYLES
-        });
-      }
+function initMap() {
+  map = new google.maps.Map(document.getElementById('map'), {
+    center: {lat: 42.993735, lng: -71.467577},
+    zoom: 16,
+    disableDefaultUI: true,
+    styles: ANTIQUE_MAP_STYLES
+  });
+}
       google.maps.event.addDomListener(window, 'load', initMap);
 
             $( document ).ready(function() {
