@@ -1,24 +1,24 @@
-      var map;
-      var dateOverlays = new Map()
-      dateOverlays.set(1868, {"img": "", "bounds": new google.maps.LatLngBounds(
-          new google.maps.LatLng(42.98235, -71.47152),
-          new google.maps.LatLng(43.00393, -71.46273)
-        )})
-      dateOverlays.set(1892, 
-        {"img":"/assets/img/Manchester 1892.png", "bounds": new google.maps.LatLngBounds(
-          new google.maps.LatLng(42.98135, -71.470026),
-          new google.maps.LatLng(43.002605, -71.45999)
-        )});
-      dateOverlays.set(1966, {"img": "", "bounds": new google.maps.LatLngBounds(
-          new google.maps.LatLng(42.98235, -71.47152),
-          new google.maps.LatLng(43.00393, -71.46373)
-        )})
-      dateOverlays.set(1972, {"img": "", "bounds": new google.maps.LatLngBounds(
-          new google.maps.LatLng(42.98235, -71.47152),
-          new google.maps.LatLng(43.00393, -71.46373)
-        )})
+var map;
+var dateOverlays = new Map()
+dateOverlays.set(1868, {"img": "", "bounds": new google.maps.LatLngBounds(
+    new google.maps.LatLng(42.98235, -71.47152),
+    new google.maps.LatLng(43.00393, -71.46273)
+  )})
+dateOverlays.set(1892, 
+  {"img":"/assets/img/Manchester 1892.png", "bounds": new google.maps.LatLngBounds(
+    new google.maps.LatLng(42.98155, -71.470026),
+    new google.maps.LatLng(43.002605, -71.45909)
+  )});
+dateOverlays.set(1966, {"img": "", "bounds": new google.maps.LatLngBounds(
+    new google.maps.LatLng(42.98235, -71.47152),
+    new google.maps.LatLng(43.00393, -71.46373)
+  )})
+dateOverlays.set(1972, {"img": "", "bounds": new google.maps.LatLngBounds(
+    new google.maps.LatLng(42.98235, -71.47152),
+    new google.maps.LatLng(43.00393, -71.46373)
+  )})
 
-      function selectDate(hashDate) {
+function selectDate(hashDate) {
   $("ul#dates>li>div.selected").removeClass("selected")
   $("ul#dates div:has(a[href='" + hashDate + "'])").addClass("selected")
   var overlayData = dateOverlays.get(parseInt(hashDate.replace("#", "")))
