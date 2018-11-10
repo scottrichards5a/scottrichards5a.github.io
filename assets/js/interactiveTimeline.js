@@ -6,8 +6,8 @@ dateOverlays.set(1868, {"img": "", "bounds": new google.maps.LatLngBounds(
   )})
 dateOverlays.set(1892, 
   {"img":"/assets/img/Manchester 1892.png", "bounds": new google.maps.LatLngBounds(
-    new google.maps.LatLng(42.98089, -71.470026),
-    new google.maps.LatLng(43.002605, -71.459191)
+    new google.maps.LatLng(42.9809, -71.470026),
+    new google.maps.LatLng(43.002605, -71.459190)
   )});
 dateOverlays.set(1966, {"img": "", "bounds": new google.maps.LatLngBounds(
     new google.maps.LatLng(42.98235, -71.47152),
