@@ -30,6 +30,15 @@
           new google.maps.LatLng(43.00393, -71.46373)
         )})
 
+      function selectDate(hashDate) {
+  $("ul#dates>li>div.selected").removeClass("selected")
+  $("ul#dates div:has(a[href='" + hashDate + "'])").addClass("selected")
+  var overlayData = dateOverlays.get(parseInt(hashDate.replace("#", "")))
+  if (overlayData && overlayData.img) {
+    overlay = new ImageOverlay(overlayData.bounds, overlayData.img, map)
+  }
+}
+
       function initMap() {
         map = new google.maps.Map(document.getElementById('map'), {
           center: {lat: 42.993735, lng: -71.467577},
