@@ -27,9 +27,9 @@
           new google.maps.LatLng(43.00393, -71.46373)
         )})
 
-      function selectDate(date) {
+      function selectDate(hashDate) {
         $("ul#dates>li>div.selected").removeClass("selected")
-        $("ul#dates div:has(a[href='#" + date + "'])").addClass("selected")
+        $("ul#dates div:has(a[href='" + hashDate + "'])").addClass("selected")
       }
 
       function initMap() {
