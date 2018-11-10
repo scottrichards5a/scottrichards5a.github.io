@@ -126,8 +126,8 @@
 
         // Date has already been selected
         var urlFragment = window.location.hash
-        if (hash) {
-          selectDate(hash);
+        if (urlFragment) {
+          selectDate(urlFragment);
         }
 
         $("div.map").click(function() {
