@@ -27,6 +27,11 @@
           new google.maps.LatLng(43.00393, -71.46373)
         )})
 
+      function selectDate(date) {
+        $("ul#dates>li>div.selected").removeClass("selected")
+        $("ul#dates div:has(a[href='#" + date + "'])").addClass("selected")
+      }
+
       function initMap() {
         map = new google.maps.Map(document.getElementById('map'), {
           center: {lat: 42.993735, lng: -71.467577},
@@ -117,6 +122,12 @@
         while (!nextDate.done) {
           $('<li><div><a href="#' + nextDate.value + '">' + nextDate.value + '</a></div></li>').insertBefore($("ul#dates li:has(div.selected)"));
           nextDate = dateIter.next();
+        }
+
+        // Date has already been selected
+        var urlFragment = window.location.hash
+        if (hash) {
+          selectDate(hash);
         }
 
         $("div.map").click(function() {
