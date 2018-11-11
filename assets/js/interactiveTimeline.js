@@ -9,7 +9,7 @@ dateOverlays.set(1892,
     new google.maps.LatLng(42.981025, -71.470155),
     new google.maps.LatLng(43.000975, -71.459165)
   )});
-dateOverlays.set(1966, {"img": "", "bounds": new google.maps.LatLngBounds(
+dateOverlays.set(1966, {"img": "assets/img/AmoskeagMillyard.png", "bounds": new google.maps.LatLngBounds(
     new google.maps.LatLng(42.98235, -71.47152),
     new google.maps.LatLng(43.00393, -71.46373)
   )})
