@@ -1,6 +1,6 @@
 var map;
 var dateOverlays = new Map()
-dateOverlays.set(1868, {"img": "grid.png", "bounds": new google.maps.LatLngBounds(
+dateOverlays.set(1868, {"img": "assets/img/grid.png", "bounds": new google.maps.LatLngBounds(
     new google.maps.LatLng(42.98235, -71.47152),
     new google.maps.LatLng(43.00393, -71.46273)
   )})
