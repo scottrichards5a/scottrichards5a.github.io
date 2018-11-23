@@ -28,7 +28,7 @@ function selectDate(hashDate) {
     if (theOverlay && theOverlay.length > 0) {
       theOverlay.show()
     } else {
-      var overlayData = dateOverlays.get(overlayId)
+      var overlayData = dateOverlays.get(parseInt(overlayId)
       if (overlayData && overlayData.img) {
         overlay = new ImageOverlay(overlayData.bounds, overlayData.img, map)
       }
