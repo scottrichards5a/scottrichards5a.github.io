@@ -1,7 +1,7 @@
 ImageOverlay.prototype = new google.maps.OverlayView();
 
-function ImageOverlay(id, bounds, image, map) {
-  this.id = id
+function ImageOverlay(overlayId, bounds, image, map) {
+  this.overlayId = overlayId
   this.bounds_ = bounds;
   this.image_ = image;
   this.map_ = map;
@@ -11,7 +11,7 @@ function ImageOverlay(id, bounds, image, map) {
 
 ImageOverlay.prototype.onAdd = function() {
   var div = document.createElement('div');
-  div.attr('id', 'imageOverlay_' + id)
+  div.attr('id', 'imageOverlay_' + overlayId)
   div.addClass('imageOverlay')
   div.style.borderStyle = 'none';
   div.style.borderWidth = '0px';

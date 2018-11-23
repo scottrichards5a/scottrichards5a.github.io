@@ -21,11 +21,11 @@ dateOverlays.set(1972, {"img": "", "bounds": new google.maps.LatLngBounds(
 function selectDate(hashDate) {
   $("ul#dates>li>div.selected").removeClass("selected");
   $("ul#dates div:has(a[href='" + hashDate + "'])").addClass("selected");
-  if hashDate {
-    var overlayId = parseInt(hashDate.replace("#", "")); 
+  var overlayId = hashDate.replace("#", "");
+  if (overlayId) {
     $(".imageOverlay:not(#imageOverlay_" + overlayId + ")").hide();
     var theOverlay = $("div#imageOverlay_" + overlayId)
-    if theOverlay.length > 0 {
+    if (theOverlay && theOverlay.length > 0) {
       theOverlay.show()
     } else {
       var overlayData = dateOverlays.get(overlayId)
