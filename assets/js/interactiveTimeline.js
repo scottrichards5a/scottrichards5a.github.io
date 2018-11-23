@@ -23,16 +23,16 @@ function selectDate(hashDate) {
   $("ul#dates div:has(a[href='" + hashDate + "'])").addClass("selected");
   var overlayId = hashDate.replace("#", "");
   if (overlayId) {
-    /*$(".imageOverlay:not(#imageOverlay_" + overlayId + ")").hide();
+    $(".imageOverlay:not(#imageOverlay_" + overlayId + ")").hide();
     var theOverlay = $("div#imageOverlay_" + overlayId)
     if (theOverlay && theOverlay.length > 0) {
       theOverlay.show()
-    } else {*/
+    } else {
       var overlayData = dateOverlays.get(parseInt(overlayId))
       if (overlayData && overlayData.img) {
-        overlay = new ImageOverlay(overlayData.bounds, overlayData.img, map)
+        overlay = new ImageOverlay(overlayId, overlayData.bounds, overlayData.img, map)
       }
-   // }
+    }
   }
 }
 
