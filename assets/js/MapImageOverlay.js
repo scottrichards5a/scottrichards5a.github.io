@@ -11,7 +11,7 @@ function ImageOverlay(overlayId, bounds, image, map) {
 
 ImageOverlay.prototype.onAdd = function() {
   var div = document.createElement('div');
-  div.attr('id', 'imageOverlay_' + this.overlayId_)
+  $(div).attr('id', 'imageOverlay_' + this.overlayId_)
   div.addClass('imageOverlay')
   div.style.borderStyle = 'none';
   div.style.borderWidth = '0px';
