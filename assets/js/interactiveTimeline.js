@@ -53,12 +53,15 @@ $( document ).ready(function() {
   var nextDate = dateIter.next();
   while (!nextDate.done) {
     $('<li><div><a href="#' + nextDate.value + '">' + nextDate.value + '</a></div></li>').insertBefore($('ul#dates li:has(div.selected)'));
-    $('div#preload').append('<div id="preload_' + nextDate.value + '" class="preload_img"></div>');
-    $('div#preload_' + nextDate.value).css({
-      "height": "1px",
-      "width": "1px",
-      "background-image": "url(" + dateOverlays[nextDate].img + ")"
-    });
+    var img = dateOverlays.get(nextDate.value).img
+    if (img) {
+      $('div#preload').append('<div id="preload_' + nextDate.value + '" class="preload_img"></div>');
+      $('div#preload_' + nextDate.value).css({
+        "height": "1px",
+        "width": "1px",
+        "background-image": "url(" + img + ")"
+      });
+    }
     nextDate = dateIter.next();
   }
 
