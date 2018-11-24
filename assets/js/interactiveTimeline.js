@@ -48,10 +48,17 @@ google.maps.event.addDomListener(window, 'load', initMap);
 
 $( document ).ready(function() {
 
+  $('body').append('<div id="preload"></div>')
   var dateIter = dateOverlays.keys();
   var nextDate = dateIter.next();
   while (!nextDate.done) {
-    $('<li><div><a href="#' + nextDate.value + '">' + nextDate.value + '</a></div></li>').insertBefore($("ul#dates li:has(div.selected)"));
+    $('<li><div><a href="#' + nextDate.value + '">' + nextDate.value + '</a></div></li>').insertBefore($('ul#dates li:has(div.selected)'));
+    $('div#preload').append('<div id="preload_' + nextDate.value + '" class="preload_img"></div>');
+    $('div#preload_' + nextDate.value).css({
+      "height": "1px",
+      "width": "1px",
+      "background-image": "url(" + dateOverlays[nextDate].img + ")"
+    });
     nextDate = dateIter.next();
   }
 

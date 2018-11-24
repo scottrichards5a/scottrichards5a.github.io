@@ -136,3 +136,22 @@ div#map_controls div#map_type div.selected {
     left: 0;
   }
 }
+
+@media screen {
+  div#preload {
+    position: absolute;
+    left: -9999px;
+    top: -9999px;
+  }
+
+  div#preload img {
+    display: block;
+  }
+}
+
+@media print {
+  div#timeline, div#expand_collapse, div#preload, div#preload img {
+    visibility: hidden;
+    display: none;
+  }
+}
